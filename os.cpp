@@ -3,6 +3,8 @@
 #include "mxtos/boot.h"
 //bios script
 #include "mxtos/bios.h"
+//security
+#include "mxtos/sec.h"
 //clearing the screen
 #include <cstdlib>
 //crearing the screen cuh
@@ -67,9 +69,13 @@ int main()
         //switch for the choices of loader
         switch (lch)
         {
+        case 1:
+        using namespace security;
+        PIN();
+        break;
         case 3:
-            return 0;
-            break;
+        return 0;
+        break;
         
         default:
         error();
