@@ -11,6 +11,7 @@ namespace bios{
 
     void startup()
     {
+        //Asumi is indeed cute
         seconds delay(3);
         seconds delay1(5);
         string startup, loading, memcheck, hddcheck, drivers, devices, ok, bad;
